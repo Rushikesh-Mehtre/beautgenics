@@ -3,7 +3,7 @@ import styles from "./SplashScreen.module.scss";
 import logo from "../../assets/images/logo.png";
 import LoginModal from "../../components/LoginModal";
 import LoadingOverlay from "react-loading-overlay-ts";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SplashScreen = () => {
   const [isActive, setActive] = useState(false);

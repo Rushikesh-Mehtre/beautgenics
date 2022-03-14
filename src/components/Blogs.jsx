@@ -52,7 +52,7 @@ const Blogs = () => {
               <p className={styles.author}>
                 by <strong>{item.author}</strong> | <strong>{item.date}</strong>
               </p>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 read more
               </a>
             </div>

@@ -3,7 +3,6 @@ import Modal from "react-modal";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
 const LoginModal = (props) => {
   const customStyles = {
     overlay: {
@@ -58,7 +57,7 @@ const LoginModal = (props) => {
         stopOnFocus: true,
       }).showToast();
       return;
-    } else if (username != "admin" || password != "admin") {
+    } else if (username !== "admin" || password !== "admin") {
       Toastify({
         text: "Oops ! incorrect username or password.",
         duration: 3000,

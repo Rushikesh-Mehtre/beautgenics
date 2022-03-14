@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import styles from "./Contact.module.scss";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
@@ -42,7 +40,6 @@ const Contact = () => {
   };
   return (
     <div className={styles.contact}>
-      {/* <Header /> */}
       <form>
         <p className={styles.head}>Contact us</p>
         <label htmlFor="">Name</label>
@@ -85,7 +82,6 @@ const Contact = () => {
         ></textarea>
         <input type="submit" value="Submit" onClick={formSubmitHandler} />
       </form>
-      {/* <Footer /> */}
     </div>
   );
 };

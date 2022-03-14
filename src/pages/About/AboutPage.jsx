@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
 import styles from "./AboutPage.module.scss";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
@@ -15,7 +14,6 @@ const AboutPage = () => {
     "https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?k=20&m=1264106963&s=170667a&w=0&h=TC6RShu_LhRPJth5UVdSYzO63iXCI4tKkMb0Wafsprk=";
   return (
     <div className={styles.aboutPage}>
-      {/* <Header /> */}
       <div className={styles.topContent}>
         <p className={styles.head}>About us</p>
         <p className={styles.text}>

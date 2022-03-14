@@ -1,11 +1,8 @@
 import React from "react";
-import Header from "../../components/Header";
 import styles from "./FAQs.module.scss";
-import Footer from "../../components/Footer";
 const FAQs = () => {
   return (
     <div className={styles.faqs}>
-      {/* <Header /> */}
       <div className={styles.faq}>
         <p className={styles.head}>Frequently Asked Questions(FAQs)</p>
 
@@ -125,7 +122,6 @@ const FAQs = () => {
           </p>
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

@@ -49,10 +49,10 @@ const News = () => {
         {newsArray.map((item) => {
           return (
             <div className={styles.newsCard} key={item.id}>
-              <img src={item.imgUrl} alt="image not found" />
+              <img src={item.imgUrl} alt="" />
               <p className={styles.newshead}>{item.title}</p>
               <p className={styles.description}>{item.description}</p>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 read more
               </a>
             </div>

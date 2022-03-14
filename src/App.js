@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router";
 import SplashScreen from "./pages/Splash Screen/SplashScreen";
 import HomeScreen from "./pages/Home Screen/HomeScreen";
@@ -10,7 +10,6 @@ import FAQs from "./pages/FAQs/FAQs";
 import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
 function App() {
   let location = useLocation();
   return (
