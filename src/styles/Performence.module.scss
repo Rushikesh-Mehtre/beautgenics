@@ -1,0 +1,55 @@
+.performence {
+  border: 1px solid rgb(211, 202, 202);
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  height: fit-content;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    .head {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .performenceNumbers {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 5px;
+    }
+    .progress {
+      width: 100%;
+      background-color: #ddd;
+      margin-bottom: 10px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3,
+    .bar4 {
+      height: 25px;
+      background-color: rgb(136, 132, 216);
+      text-align: center;
+      line-height: 30px;
+      color: white;
+    }
+    .bar1 {
+      width: 65%;
+    }
+    .bar2 {
+      width: 75%;
+    }
+    .bar3 {
+      width: 80%;
+    }
+    .bar4 {
+      width: 72%;
+    }
+  }
+}

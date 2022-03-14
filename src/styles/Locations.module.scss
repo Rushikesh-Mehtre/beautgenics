@@ -1,0 +1,66 @@
+.locations {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  .head {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    p {
+      display: flex;
+      flex-direction: column;
+
+      .number {
+        font-size: 35px;
+        font-weight: 600;
+        color: #3b3768;
+      }
+      .text {
+        font-size: 20px;
+      }
+    }
+  }
+  .cities {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    p {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .icon {
+        font-size: 20px;
+      }
+      .text {
+        font-size: 25px;
+        font-weight: 500;
+        color: #3b3768;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .locations {
+    .cities {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .locations {
+    .cities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

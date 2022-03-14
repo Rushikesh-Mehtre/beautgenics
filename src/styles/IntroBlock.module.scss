@@ -1,0 +1,81 @@
+.introBlock {
+  display: grid;
+  padding: 10px 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  a {
+    text-decoration: none;
+    border: 0.5px solid #3b3768;
+    padding: 4px 8px;
+    color: black;
+    width: fit-content;
+    //   margin: 0 10px;
+    background: linear-gradient(to left, white 50%, #3b3768 50%) right;
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    &:hover {
+      background-position: left;
+      color: white;
+    }
+  }
+  .block1 {
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 204, 204);
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .head {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .subhead {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      border: 0.5px solid #3b3768;
+      padding: 4px 8px;
+      color: black;
+      width: fit-content;
+      background: linear-gradient(to left, white 50%, #3b3768 50%) right;
+      background-size: 200%;
+      transition: 0.4s ease-out;
+      &:hover {
+        background-position: left;
+        color: white;
+      }
+    }
+  }
+  .block2,
+  .block3,
+  .block4 {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(216, 204, 204);
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .head {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .introBlock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .introBlock {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 20px;
+  }
+}

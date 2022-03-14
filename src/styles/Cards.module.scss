@@ -1,0 +1,46 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  .card {
+    padding: 10px;
+    border: 1px solid rgb(216, 204, 204);
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .title {
+      font-size: 16px;
+      color: rgb(139, 132, 132);
+    }
+    .numbers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .absolute {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .percent {
+        font-size: 20px;
+        font-weight: 400;
+        .icon {
+          position: relative;
+          top: 3px;
+          font-weight: bold;
+          font-size: 20px;
+          color: tomato;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

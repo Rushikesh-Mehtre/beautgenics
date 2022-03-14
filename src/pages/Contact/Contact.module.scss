@@ -1,0 +1,43 @@
+.contact {
+  min-height: calc(100vh - 122px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  form {
+    .head {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 14px;
+    }
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+    textarea {
+      outline: none;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      color: white;
+      background: #3b3768;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    form {
+      width: 80%;
+    }
+  }
+}

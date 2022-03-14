@@ -1,0 +1,31 @@
+.homeScreen {
+  .topContent {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .homeScreen {
+    .topContent {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .homeScreen {
+    .topContent {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .homeScreen {
+    .topContent {
+      padding: 20px 20px;
+    }
+  }
+}

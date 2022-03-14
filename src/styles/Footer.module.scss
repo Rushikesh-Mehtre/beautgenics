@@ -1,0 +1,29 @@
+.footer {
+  background-color: #3b3768;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  .icons {
+    display: flex;
+    gap: 20px;
+    * {
+      font-size: 25px;
+      cursor: pointer;
+
+      &:hover {
+        color: tomato;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 10px;
+  }
+}

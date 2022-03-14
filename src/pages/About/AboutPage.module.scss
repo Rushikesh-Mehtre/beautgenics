@@ -1,0 +1,140 @@
+.aboutPage {
+  .head {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .topContent {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    .text {
+      width: 80%;
+    }
+  }
+  .midContent {
+    padding: 0px 50px;
+    margin-bottom: 50px;
+    .mainBlock {
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .subBlocks {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 50px;
+      .subBlock {
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .bottomContent {
+    padding: 10px 50px;
+    background: rgb(255, 255, 255);
+    .numbers {
+      display: flex;
+      justify-content: space-between;
+      .numberBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .count {
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .infoContent {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    .infoBlock {
+      display: flex;
+      flex-direction: column;
+      span {
+        .icon {
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutPage {
+    .topContent {
+      padding: 0px 10px;
+      .text {
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutPage {
+    .bottomContent {
+      .numbers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .infoContent {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .aboutPage {
+    .midContent {
+      .subBlocks {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .aboutPage {
+    .bottomContent {
+      .numbers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+}
