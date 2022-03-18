@@ -27,13 +27,13 @@ const LoginModal = (props) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     Toastify({
-      text: "username and password - admin",
+      text: "username-admin and password-admin",
       duration: 5000,
       newWindow: true,
       close: false,
       gravity: "top",
       position: "center",
-      background: "red",
+      backgroundColor: "#3b3768",
       stopOnFocus: true,
     }).showToast();
     setIsOpen(true);
@@ -48,26 +48,28 @@ const LoginModal = (props) => {
     if (!username || !password) {
       Toastify({
         text: "Please enter username and password",
-        duration: 3000,
+        duration: 2000,
         newWindow: true,
         close: false,
         gravity: "top",
         position: "center",
-        background: "red",
+        backgroundColor: " #ff3333",
         stopOnFocus: true,
       }).showToast();
       return;
     } else if (username !== "admin" || password !== "admin") {
       Toastify({
         text: "Oops ! incorrect username or password.",
-        duration: 3000,
+        duration: 2000,
         newWindow: true,
         close: false,
         gravity: "top",
         position: "center",
-        background: "red",
+        backgroundColor: "#ff3333",
         stopOnFocus: true,
       }).showToast();
+      setUsername("");
+      setPassword("");
       return;
     } else {
       sessionStorage.setItem("username", "admin");
@@ -77,13 +79,13 @@ const LoginModal = (props) => {
   };
   const forgotPasswordHandler = () => {
     Toastify({
-      text: "username and password - admin",
+      text: "username-admin and password-admin",
       duration: 3000,
       newWindow: true,
       close: false,
       gravity: "top",
       position: "center",
-      background: "red",
+      backgroundColor: "#3b3768",
       stopOnFocus: true,
     }).showToast();
   };
@@ -92,11 +94,12 @@ const LoginModal = (props) => {
       <button
         onClick={openModal}
         style={{
-          padding: "5px 30px",
+          padding: "5px 35px",
           background: "#3b3768",
           border: "none",
           cursor: "pointer",
           color: "white",
+          fontSize: "17px",
         }}
       >
         Login

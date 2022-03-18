@@ -6,7 +6,7 @@ import LogoutModal from "./LogoutModal";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
-const Header = () => {
+const Header = (props) => {
   const [menusShown, setMenusShown] = useState(true);
   const btnClickHandler = () => {
     if (mql.matches) {
@@ -19,7 +19,10 @@ const Header = () => {
       setMenusShown(false);
     }
   }, [mql.matches]);
-
+  const logOutHandler = (value) => {
+    console.log(value);
+    props.onClick(value);
+  };
   return (
     <div className={styles.header}>
       <div className={styles.logoBox}>
@@ -80,7 +83,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <LogoutModal />
+              <LogoutModal onClick={logOutHandler} />
             </li>
           </ul>
         </div>

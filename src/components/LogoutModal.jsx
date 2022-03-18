@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { Link, useNavigate } from "react-router-dom";
 
-const LogoutModal = () => {
+const LogoutModal = (props) => {
   const customStyles = {
     overlay: {
       position: "fixed",
@@ -34,21 +34,12 @@ const LogoutModal = () => {
   const logoutHandler = () => {
     sessionStorage.removeItem("username");
     sessionStorage.removeItem("password");
+    props.onClick(true);
     navigate("/");
   };
   return (
     <div>
-      <Link
-        to="#"
-        onClick={openModal}
-        // style={{
-        //   padding: "5px 20px",
-        //   background: "#3b3768",
-        //   border: "none",
-        //   cursor: "pointer",
-        //   color: "white",
-        // }}
-      >
+      <Link to="#" onClick={openModal}>
         Logout
       </Link>
       <Modal

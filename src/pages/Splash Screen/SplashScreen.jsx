@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./SplashScreen.module.scss";
 import logo from "../../assets/images/logo.png";
 import LoginModal from "../../components/LoginModal";
@@ -6,6 +6,9 @@ import LoadingOverlay from "react-loading-overlay-ts";
 import { useNavigate } from "react-router-dom";
 
 const SplashScreen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isActive, setActive] = useState(false);
   const navigate = useNavigate();
   const spinnerHandler = (value) => {
@@ -20,7 +23,7 @@ const SplashScreen = () => {
       <div style={{ height: "100vh" }}>
         <div className={styles.splashScreen}>
           <img src={logo} alt="" className={styles.logoImg} />
-          <p className={styles.head}>Welcome Sales respresentives</p>
+          <p className={styles.head}>Welcome Sales representative</p>
           <LoginModal onclick={spinnerHandler} />
         </div>
       </div>

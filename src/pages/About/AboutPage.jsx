@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./AboutPage.module.scss";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const img1 =
     "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80";
   const img2 =

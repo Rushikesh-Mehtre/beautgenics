@@ -1,6 +1,7 @@
 .splashScreen {
   display: flex;
   height: 100vh;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   justify-content: center;

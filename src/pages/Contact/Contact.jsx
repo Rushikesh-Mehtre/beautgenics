@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.scss";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [userForm, setUserForm] = useState({
     name: "",
     mobile: "",
